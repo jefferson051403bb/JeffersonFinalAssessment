@@ -1,0 +1,128 @@
+.books-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #D6EFD8; /* Light green background */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.books-title {
+  text-align: center;
+  color: #1A5319; /* Dark green text */
+  margin-bottom: 20px;
+}
+
+.search-filter-container {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  border: 1px solid #80AF81; /* Medium green border */
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #508D4E; /* Darker green focus */
+  box-shadow: 0 4px 6px rgba(0, 123, 255, 0.2);
+}
+
+.books-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.books-header,
+.book-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #80AF81; /* Medium green border */
+  align-items: center;
+}
+
+.books-header {
+  background-color: #508D4E; /* Darker green header */
+  color: white;
+  font-weight: bold;
+}
+
+.book-item:nth-child(even) {
+  background-color: #F2F2F2; /* Light gray for even rows */
+}
+
+.book-index,
+.book-title,
+.book-author,
+.book-due-date,
+.book-status,
+.book-action {
+  text-align: center;
+}
+
+.books-header .book-index,
+.books-header .book-title,
+.books-header .book-author,
+.books-header .book-due-date,
+.books-header .book-status,
+.books-header .book-action,
+.book-item .book-index,
+.book-item .book-title,
+.book-item .book-author,
+.book-item .book-due-date,
+.book-item .book-status,
+.book-item .book-action {
+  flex: 1;
+  padding: 5px;
+}
+
+.book-index {
+  flex: 0.5;
+}
+
+.book-title {
+  flex: 2;
+}
+
+.book-author {
+  flex: 1.5;
+}
+
+.book-due-date {
+  flex: 1.5;
+}
+
+.book-status {
+  flex: 1;
+}
+
+.book-action {
+  flex: 1;
+}
+
+.toggle-button {
+  background-color: #346e35; /* Medium green button */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.toggle-button:hover {
+  background-color: #577956; /* Darker green hover */
+}
